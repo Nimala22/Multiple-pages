@@ -29,13 +29,13 @@ a {
 
 01. header section css.
 ________________________
-  1.1= 
-  1.2=
-  1.3=
 
+  1.1= header section css
+  
 02. main section css. 
 ________________________
-  2.1=
+
+  2.1= hero-area section css
   2.2=
   2.3=
   2.4=
@@ -52,3 +52,96 @@ _________________________
   3.4=
 
 */
+
+/* 
+==========================================
+      01. header section css
+==========================================
+*/
+header{
+  background: #1D1D1F;
+  border-bottom: 2px solid #8f6868;
+}
+
+nav{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo a h1{
+  color: #94918A;
+  font-size: 30px;
+  padding: .5rem;
+  transition: .5s;
+}
+
+.logo a h1:hover{
+  color: #FFF9C5;
+  background: #01091C;
+  border-radius: 30rem;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li a{
+  color: #f0cd03;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 0 20px;
+  transition: .5s;
+}
+
+nav ul li a:hover{
+  color: #ff4d00;
+  background: #e3ffff;
+  text-transform: capitalize;
+  border-radius: 30rem;
+  padding: .5rem;
+}
+/* 
+==========================================
+      2.1= hero-area section css
+==========================================
+*/
+.hero-area{
+  background: url(images/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 400px 0;
+  
+}
+.search-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icons i{
+  color: #f1ccf3;
+  background: #510151;
+  font-size: 25px;
+  height: 45px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffee00;
+  border-radius: 3px;
+  cursor: pointer;   
+}
+
+.search-bar input{
+  color: #ff5e00;
+  font-size: 18px;
+  font-weight: bold;
+  width: 500px;
+  height: 45px;
+  border: 2px solid #08c9d7;
+}
