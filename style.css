@@ -134,26 +134,37 @@ nav ul li a:hover {
   border: 2px solid #ffee00;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-icons i:hover {
+  color: #ffffff;
+  background: #013f41;
+  border: 2px solid #00ffff;
+  transform: rotate(360deg);
 }
 
 .search-bar input {
-  color: #ff5e00;
+  color: #ff5252;
+  background: #dcdde1;
   font-size: 18px;
   font-weight: bold;
   width: 500px;
   height: 45px;
-  border: 2px solid #ff00e6;
+  border: 2px solid #00b3ff;
+  padding: 1rem;
+  text-transform: capitalize;
 }
 /* 
 ==========================================
       2.2= latest video section css
 ==========================================
 */
-#latest-video{
+#latest-video {
   background: #ced6e0;
 }
 
-.video-content{
+.video-content {
   width: 1200px;
   margin: 0 auto;
   padding: 80px 0;
@@ -162,18 +173,47 @@ nav ul li a:hover {
 }
 
 .latest-video-title,
-.latest-video-page-batton h4{
+.latest-video-page-batton h4 {
   color: #273c75;
   font-size: 25px;
   font-weight: bold;
 }
 
-.latest-video-page-batton span{
+.latest-video-page-batton span {
   color: #ef3309;
   background: #acd9ff;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid #111;
   border-radius: 3px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+/* =========images-section========== */
+#all-videos-images {
+  background: #3b3b98;
+  width: 1300px;
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.single-video-img .image a img {
+  height: 250px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 1px 8px;
+}
+
+.single-video-img .image-content {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-content h5 {
+  color: #f8efba;
+  font-size: 18px;
 }
