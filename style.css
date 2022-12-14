@@ -36,20 +36,12 @@ ________________________
 ________________________
 
   2.1= hero-area section css
-  2.2= latest video section css
-  2.3=
-  2.4=
-  2.5=
-  2.6=
-  2.7=
+  2.2= latest video section css  
 
 03. footer section css. 
 _________________________
 
-  3.1=
-  3.2=
-  3.3=
-  3.4=
+  0.3= footer section css.
 
 */
 
@@ -287,33 +279,34 @@ nav ul li a:hover {
   align-items: center;
 }
 
-h3{
+h3 {
   background: #ffffff;
   border: 2px solid #3b3b98;
   border-radius: 5px;
   padding: 0.5rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 h3 a i {
   color: rgb(159, 4, 4);
   font-size: 22px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 h3 a span {
   color: #ff00f7;
   font-size: 22px;
   font-weight: bolder;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-h3:hover{
+h3:hover {
   background: #95afc0;
+  border: 2px solid #0E5E6F;
 }
 
-h3:hover a i, 
-h3:hover a span{
+h3:hover a i,
+h3:hover a span {
   color: #fff;
 }
 
@@ -327,3 +320,151 @@ h3:hover a span{
   font-size: 22px;
   font-weight: bold;
 }
+
+/* 
+==========================================
+      03. footer section css
+==========================================
+*/
+footer {
+  background: #9a86a4;
+  padding: 60px 0;
+}
+
+.footer-content {
+  width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content:hover {
+  box-shadow: 10px 14px 15px 12px #ffffff;
+}
+.footer-content .about {
+  width: 400px;
+}
+/* .footer-content .our-links,
+.footer-content .social-icons{ */
+
+.about h2 {
+  margin: 20px 0;
+}
+.about h2 a {
+  color: #eafaab;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.about h2 a:hover {
+  color: #485a01;
+  background: #f4ead5;
+  box-shadow: 3px 8px 7px 4px #62f5f5;
+  border-radius: 30rem;
+}
+
+.about p {
+  color: #453c67;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 30px 20px 0;
+  transition: 0.5s;
+}
+
+.about p:hover {
+  color: #2d033b;
+}
+
+.about h5 {
+  color: #024946;
+  font-size: 18px;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.about h5:hover {
+  color: #00ffdd;
+}
+
+.footer-content .our-links h2 {
+  color: #540375;
+  font-size: 30px;
+  padding: 1rem;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.footer-content .our-links:hover h2 {
+  color: #9E7676;
+  background: #fff;
+}
+
+.our-links .all-links a {
+  color: #02504d;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  margin: 15px 0;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.our-links .all-links a:hover {
+  color: #00ffff;
+  background: #3C4048; 
+  padding-left: 2.5rem;
+  border: 1px solid #dcf0f0;
+  border-radius: 30rem;
+}
+
+.social-icons a {
+  margin: 10px;
+  padding: 20px 0;
+}
+
+.social-icons .all-social-icons a i {
+  color: #ff3700;
+  background: #ffffff;
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.social-icons .all-social-icons a:hover i {
+  color: #ffffff;
+  background: #EA047E;
+  transform: rotate(360deg);
+  border-radius: 5px 1px;
+}
+
+.social-icons h5 a{
+  font-size: 22px;
+  font-weight: bold;
+  color: #ddd;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 1rem;
+}
+
+.social-icons h5 a:hover{
+  color: #815B5B;
+  background: #f7e9ce;
+  border-radius: 30rem;
+}
+
+.social-icons h5 span{
+  color: #00fff2;
+  display: inline-block;
+}
+
+.social-icons h5:hover span{
+  color: #03417b;
+}
+
+
