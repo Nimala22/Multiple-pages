@@ -1,0 +1,237 @@
+/* Website's font here */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;1000&display=swap");
+
+/* Website's Default CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* blog main css */
+
+/* 
+==========================================
+      01. navigation css code start
+==========================================
+*/
+header {
+  background: #1d1d1f;
+  border-bottom: 2px solid #8f6868;
+  position: sticky;
+  top: 0;
+  z-index: 111;
+}
+
+nav {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo a h1 {
+  color: #94918a;
+  font-size: 30px;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.logo a h1:hover {
+  color: #fc427b;
+  background: #ffffff;
+  border-radius: 30rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  color: #f0cd03;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: #ff4d00;
+  background: #e3ffff;
+  text-transform: capitalize;
+  border-radius: 30rem;
+  padding: 0.5rem;
+}
+
+/* 
+==========================================
+      01. navigation css code end
+==========================================
+*/
+
+#blog {
+  margin: 80px;
+  padding: 1rem;
+}
+
+.blog-content {
+  width: 1200px;
+  margin: auto;
+}
+
+.blog-tittle {
+  text-align: center;
+  margin: 3rem 1.5rem;
+  padding: 0.5rem;
+}
+
+.blog-tittle h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ff8e9e;
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.blog-tittle:hover h2 {
+  color: #810ca8;
+  background: #eef5b0;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  border: 2px solid #bf00ff;
+  border-radius: 30rem;
+}
+
+.blog-tittle p {
+  color: #111;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ===blog-card=== */
+.blogs-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0.5rem;
+}
+
+.blog {
+  width: 380px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 2px groove #453c67;
+}
+
+.blog:hover {
+  box-shadow: 15px 5px 20px 10px #02595c;
+}
+
+.blog > a img {
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-details {
+  padding: 0.5rem;
+}
+
+.food-nam-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-nam-rate h2 {
+  color: #cb1c8d;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.food-nam-rate span {
+  color: #ce7777;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.blog-details > p {
+  color: #c58940;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.blog-icons a {
+  margin: 1rem;
+}
+
+.blog-icons a i {
+  color: #088433;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.blog-icons a i:hover {
+  transform: rotate(360deg);
+  font-size: 30px;
+  color: #f700ff;
+}
+
+.about-food p {
+  margin: 1rem 0;
+  color: #5f8d4e;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.food-rating {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-rating .icons i {
+  font-size: 20px;
+  color: gold;
+  margin: 10px;
+}
+
+.food-button {
+  color: #ff6600;
+  background: #f1f5e9;
+  border: none;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0.5rem;
+  display: flex;
+  margin: auto;
+  border-radius: 30rem;
+  transition: 0.5s;
+}
+
+.food-button:hover {
+  color: #fff;
+  background: #5f8d4e;
+  letter-spacing: 5px;
+}

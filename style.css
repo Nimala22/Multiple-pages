@@ -53,6 +53,9 @@ _________________________
 header {
   background: #1d1d1f;
   border-bottom: 2px solid #8f6868;
+  position: sticky;
+  top: 0;
+  z-index: 111;
 }
 
 nav {
@@ -207,7 +210,7 @@ nav ul li a:hover {
 }
 
 .latest-video-page-batton h4:hover {
-  color: #01785e;
+  color: #e708c9;
 }
 
 /* =========images-section========== */
@@ -221,16 +224,23 @@ nav ul li a:hover {
   gap: 15px;
 }
 
-.single-video-img .image {
-  position: relative;
-  overflow: hidden;
-}
-
-.single-video-img .image a img {
+.single-video-img .image{
   height: 250px;
   width: 300px;
-  border: 2px solid #ddd;
+  border: 4px groove #00ffea;
   border-radius: 1px 8px;
+  overflow: hidden;
+  position: relative;
+} 
+
+.single-video-img .image a img{
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+}
+
+.single-video-img .image:hover a img{
+  transform: scale(1.3);
 }
 
 .single-video-img .images-icons {
@@ -246,24 +256,28 @@ nav ul li a:hover {
 
 .single-video-img .images-icons a i {
   font-size: 25px;
-  color: #fc427b;
-  background: #fff6f6;
+  color: #d52056;
+  background: #ffffff;
   display: block;
   margin: 20px;
   padding: 0.5rem;
-  border: 2px solid #015704;
+  border: 3px solid #00c3ff;
   border-radius: 1px 9px;
   transition: 0.5s;
 }
 
 .single-video-img .images-icons a:hover i {
   transform: rotate(360deg);
+  color: #ff4400;
+  background: #ffffff;
+  border: 3px solid #ff0073;
 }
 
 .single-video-img .image-content {
   width: 300px;
   display: flex;
   justify-content: space-between;
+  padding: .5rem;
 }
 
 .image-content h5 {
@@ -302,7 +316,7 @@ h3 a span {
 
 h3:hover {
   background: #95afc0;
-  border: 2px solid #0E5E6F;
+  border: 2px solid #0e5e6f;
 }
 
 h3:hover a i,
@@ -400,7 +414,7 @@ footer {
 }
 
 .footer-content .our-links:hover h2 {
-  color: #9E7676;
+  color: #9e7676;
   background: #fff;
 }
 
@@ -416,7 +430,7 @@ footer {
 
 .our-links .all-links a:hover {
   color: #00ffff;
-  background: #3C4048; 
+  background: #3c4048;
   padding-left: 2.5rem;
   border: 1px solid #dcf0f0;
   border-radius: 30rem;
@@ -438,12 +452,12 @@ footer {
 
 .social-icons .all-social-icons a:hover i {
   color: #ffffff;
-  background: #EA047E;
+  background: #ea047e;
   transform: rotate(360deg);
   border-radius: 5px 1px;
 }
 
-.social-icons h5 a{
+.social-icons h5 a {
   font-size: 22px;
   font-weight: bold;
   color: #ddd;
@@ -452,19 +466,22 @@ footer {
   padding: 1rem;
 }
 
-.social-icons h5 a:hover{
-  color: #815B5B;
+.social-icons h5 a:hover {
+  color: #815b5b;
   background: #f7e9ce;
   border-radius: 30rem;
 }
 
-.social-icons h5 span{
+.social-icons h5 span {
   color: #00fff2;
   display: inline-block;
+  transition: 0.5s;
 }
 
-.social-icons h5:hover span{
-  color: #03417b;
+.social-icons h5:hover span {
+  color: #0084ff;
+  background: #fff;
+  border: 2px solid #15a30a;
+  border-radius: 30rem;
+  padding: 0.5rem;
 }
-
-
